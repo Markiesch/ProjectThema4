@@ -1,0 +1,40 @@
+/* 
+    Author: Mark Schuurmans
+    Date: 4-6-2021
+    File: styles/404.css
+
+    Stylesheet Project Thema 4
+*/
+
+main
+{
+    text-align: center;
+}
+
+main h1
+{
+    color: var(--primary-color);
+    text-shadow: 3px 3px 20px rgba(0, 0, 0, 0.3);
+    font-size: clamp(150px, 50px + 30vw, 400px);
+}
+
+main h3
+{
+    color: var(--text-color);
+    font-size: clamp(24px, 20px + 0.9vw, 34px);
+    margin-bottom: 0.5em;
+}
+
+main a
+{
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: clamp(18px, 14px + 1.25vw, 24px);
+    border-bottom: 1px solid transparent;
+    transition: border 300ms ease;
+}
+
+main a:hover
+{
+    border-bottom: 1px solid var(--primary-color);
+}

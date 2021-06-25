@@ -1,0 +1,304 @@
+/* 
+    Author: Mark Schuurmans
+    Date: 29-5-2021
+    File: styles/style.css
+
+    Stylesheet Project Thema 4
+*/
+
+/* =================
+     Global Styles
+   ================= */
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* Style resets */
+*,
+*::before,
+*::after
+{
+    /* Resetten van default margin en padding */
+    margin: 0;
+    padding: 0;
+    /* Zo worden margin, padding en borders meegeteld in de totale breedte / hoogte */
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* Verwijderd de uitlijningen rondom een element wanneer de gefocused is */
+:focus
+{
+    outline: none;
+}
+
+::selection
+{
+    color: white;
+    background-color: var(--primary-color);
+}
+
+/* Variables */
+:root
+{
+    /* --primary-color: hsl(220, 98%, 51%); */
+    --primary-color: hsl(359, 90%, 62%);
+    --orange-color: hsl(39, 96%, 68%);
+    --primary-color-2: hsla(359, 90%, 62%, 0.1);
+    /* --primary-color-2: hsla(220, 98%, 51%, 0.1); */
+    --primary--light-color: hsl(3, 85%, 95%);
+    /* --primary--light-color: hsl(220, 98%, 95%); */
+    --text-color: hsl(0, 0%, 18%);
+    --body-background: hsl(0, 0%, 100%);
+    --gray-text-color: hsl(0, 0%, 30%);
+    --footer-primary: #29313c;
+    --footer-secondary: #1b252e;
+}
+
+/* Dark Mode */
+/*:root {*/
+/*    --primary-color: hsl(220, 98%, 51%);*/
+/*    --orange-color: #fcc55e;*/
+/*    --primary-color-2: hsla(359, 90%, 62%, 0.1);*/
+/*    --primary--light-color: #232323;*/
+/*    --text-color: white;*/
+/*    --body-background: #1b252e;*/
+/*    --gray-text-color: rgba(255, 255, 255, 0.6);*/
+/*}*/
+
+body
+{
+    background-color: var(--body-background);
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar
+{
+    width: 0;
+}
+
+.progressbar
+{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 5px;
+    height: 0;
+    z-index: 1000;
+    background-color: var(--primary-color);
+    transition: height 300ms ease-out;
+}
+
+.background
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 100vh;
+    background: linear-gradient(to bottom, var(--primary--light-color) 15%, transparent);
+    z-index: -1;
+}
+
+header
+{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding: 0 1em;
+    z-index: 99;
+}
+
+header ul
+{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    /* Zet de child elementen helemaal uit elkaar */
+    justify-content: space-between;
+    align-items: center;
+    min-height: 120px;
+}
+
+header li
+{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+/* Taal knop */
+.lang
+{
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-right: 2.5em;
+}
+
+.lang svg
+{
+    height: 2.5em;
+    fill: var(--primary-color);
+}
+
+header a
+{
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.logo
+{
+    letter-spacing: 4px;
+    font-weight: 600;
+    transition: letter-spacing 300ms ease;
+}
+
+.logo:hover,
+.logo:focus
+{
+    letter-spacing: 2px;
+}
+
+.login--button
+{
+    padding: 0.75em 1.5em;
+    color: white;
+    background-color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    border-radius: 2em;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    transition: background-color 300ms ease, color 300ms ease;
+}
+
+.login--button svg
+{
+    height: 1em;
+    margin-right: 0.5em;
+    fill: white;
+    transition: fill 300ms ease;
+}
+
+.login--button:hover,
+.login--button:focus
+{
+    color: var(--primary-color);
+    background-color: transparent;
+    fill: var(--primary-color);
+}
+
+.login--button:hover svg,
+.login--button:focus svg
+{
+    fill: var(--primary-color);
+}
+
+.menu--wrapper
+{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 100;
+    display: flex;
+}
+
+@keyframes menu
+{
+    to {
+        height: 100%;
+    }
+}
+
+.menu--background
+{
+    height: 0;
+    flex: 1;
+    background-color: #111;
+    animation: 300ms menu ease forwards;
+}
+
+.menu--background2
+{
+    animation-delay: 300ms;
+}
+
+.menu--background3
+{
+    animation-delay: 600ms;
+}
+
+main
+{
+    margin: 0 1em 0 1em;
+}
+
+footer {
+    background-color: var(--footer-primary);
+}
+
+.footer-body
+{
+    color: white;
+    padding: 3em;
+    display: grid;
+    gap: 2em;
+    /* Maakt gelijke collomen van minimaal 400px breed en maximaal 1fr (Een fraction = breedte van parent)*/
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+.footer-bottom
+{
+    background-color: var(--footer-secondary);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5em 3em;
+    color: #999;
+}
+
+footer a
+{
+    color: inherit;
+    text-decoration: none;
+}
+
+footer svg
+{
+    height: 1.5em;
+    fill: currentColor;
+}
+
+@media screen and (max-width: 950px)
+{
+    main
+    {
+        margin: 120px 1em 0 1em;
+    }
+
+    /* Schakelt het muishover effecte uit op kleinere schermen */
+    .animate
+    {
+        transform: translate(0, 0) !important;
+    }
+
+    .image--container
+    {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 360px)
+{
+    .image--container
+    {
+        display: none;
+    }
+}

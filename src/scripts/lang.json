@@ -1,0 +1,83 @@
+{
+    "en": {
+        "homepageTitle": "Homepage &#8226; Foodz",
+        "heroTag": "More than food",
+        "heroTitle": "Enjoy the wonderful <span>Foodz</span> experience",
+        "heroSubtitle": "Foodz is an small catering industry based in the Netherlands. We help students make the best catering events possible.",
+
+        "iframeTag": "Our Students",
+        "iframeTitle": "Catering students at <span>Koning Willem I College</span>",
+        "iframeSubTitle": "Get to know the Secondary Horeca School of the Koning Willem I College and take a look at our restaurants and kitchens.",
+
+        "loginTitle": "Log in &#8226; Foodz",
+        "loginWelcome": "Welcome back",
+        "signIn": "Sign In",
+        "usernameLabel": "Username",
+        "passwordLabel": "Password",
+        "signInBtn": "Log in",
+
+        "errorSubtitle": "Something's missing.",
+        "errorLink": "Go back",
+
+        "editorTitle": "Editor &#8226; Foodz",
+        "dashboardBtn": "Dashboard",
+        "profileBtn": "Profile",
+        "settingsBtn": "Settings",
+        "lang": "Language",
+        "choose-lang": "Choose your preferred language",
+
+        "username": "Username",
+        "role": "Role",
+        "save": "Save",
+
+        "eventsTitle": "Events &#8226; Foodz",
+        "search": "Search",
+        "no-result": "No results found",
+        "noevents": "We didn't found any events containing the ID",
+        "confirm-delete": "Are you sure you want to delete the following item?",
+        "confirm": "Confirm",
+
+        "singOut": "Log out"
+    },
+
+    "nl": {
+        "homepageTitle": "Startpagina &#8226; Foodz",
+        "heroTag": "Meer dan eten",
+        "heroTitle": "Geniet van de<br /><span>Foodz</span> ervaring",
+        "heroSubtitle": "Foodz is een kleine horecabranche gevestigd in Nederland. We helpen studenten om de best mogelijke horecaevenementen te organiseren.",
+
+        "iframeTag": "Onze Studenten",
+        "iframeTitle": "Horeca studenten op het Koning Willem I College",
+        "iframeSubTitle": "Maak kennis met de Middelbare Horeca School van het Koning Willem I College en neem een kijkje in onze restaurants en keukens.",
+
+        "loginTitle": "Inloggen &#8226; Foodz",
+        "loginWelcome": "Welkom Terug",
+        "signIn": "Log in",
+        "usernameLabel": "Gebruikersnaam",
+        "passwordLabel": "Wachtwoord",
+        "signInBtn": "Inloggen",
+
+        "errorSubtitle": "Er mist iets.",
+        "errorLink": "Ga terug",
+
+        "editorTitle": "Bewerken &#8226; Foodz",
+        "dashboardBtn": "Start",
+        "profileBtn": "Profiel",
+        "settingsBtn": "Instellingen",
+        "lang": "Taal",
+        "choose-lang": "Kies je favoriete taal",
+
+        "username": "Gebruikersnaam",
+        "role": "Rol",
+        "save": "Opslaan",
+
+        "eventsTitle": "Evenementen &#8226; Foodz",
+        "search": "Zoeken",
+        "no-result": "Geen resultaten gevonden",
+        "noevents": "Geen evenement gevonden met het ID",
+        "confirm-delete": "Weet je zeker dat je het volgende wil verwijderen?",
+        "confirm": "Bevestigen",
+
+        "singOut": "Uitloggen"
+    }
+}

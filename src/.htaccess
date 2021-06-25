@@ -1,0 +1,14 @@
+#    Author: Mark Schuurmans
+#    Date: 2-6-2021
+#    File: .htaccess
+
+#    Project Thema 4
+
+# Selecting ErrorDocument
+ErrorDocument 404 /ProjectThema4/pages/404.php
+
+# Verwijderen .php op het eind van de URL
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+# Regex om alles na de punt te selecteren
+RewriteRule ^([^\.]+)$ $1.php [NC,L]

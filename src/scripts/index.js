@@ -41,4 +41,4 @@ const images = 4;
 const image = imgContainer.querySelector("img");
 const number = Math.floor(Math.random() * images) + 1;
 if (number == 3) image.classList.add("reverse");
-image.src = `/src/images/bg${number}.png`;
+image.src = `/ProjectThema4/src/images/bg${number}.png`;

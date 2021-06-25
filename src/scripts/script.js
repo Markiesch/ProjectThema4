@@ -28,7 +28,7 @@ function toggleLang() {
 }
 
 function loadLang() {
-    fetch("/src/scripts/lang.json")
+    fetch("/ProjectThema4/src/scripts/lang.json")
         .then((response) => response.json())
         .then((data) => {
             // Selecteerd alle elementen met een data-lang attribuut

@@ -10,8 +10,14 @@
     ·
     <a href="https://github.com/Markiesch/ProjectThema4/issues">Request Feature</a>
 </div>
-<br />
-<br />
-<br />
+<br /><br /><br /><br /><br /><br />
 
-![Landing page](https://raw.githubusercontent.com/Markiesch/portfolio/master/images/projects/foodz/index.png "Landing Page")
+![mockup](https://raw.githubusercontent.com/Markiesch/portfolio/main/src/assets/mockups/foodz.png "mockup")
+![homepage](https://raw.githubusercontent.com/Markiesch/portfolio/main/src/assets/projects/foodz/homepage.png "homepage")
+![login page](https://raw.githubusercontent.com/Markiesch/portfolio/main/src/assets/projects/foodz/login.png "login page")
+![appearance page](https://raw.githubusercontent.com/Markiesch/portfolio/main/src/assets/projects/foodz/appearance.png "appearance page")
+![edit page](https://raw.githubusercontent.com/Markiesch/portfolio/main/src/assets/projects/foodz/edit.png "edit page")
+![editor page](https://raw.githubusercontent.com/Markiesch/portfolio/main/src/assets/projects/foodz/editor.png "editor page")
+![overzicht page](https://raw.githubusercontent.com/Markiesch/portfolio/main/src/assets/projects/foodz/overzicht.png "overzicht page")
+
+

@@ -1,325 +1,284 @@
-/* 
-    Author: Mark Schuurmans
-    Date: 4-6-2021
-    File: styles/events.css
-
-    Stylesheet Project Thema 4
-*/
-
-.events
-{
-    padding: 150px 0;
-    max-width: 1200px;
-    margin: 0 auto;
+.events {
+  padding: 150px 0;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.search--form
-{
-    margin-bottom: 3em;
-    background-color: white;
-    padding: 1em;
-    border-radius: 10px;
+.events .btn-container {
+  display: none;
 }
 
-.search--form label
-{
-    cursor: pointer;
-    font-weight: 600;
-    font-size: 20px;
+.search--form {
+  margin-bottom: 3em;
+  background-color: white;
+  padding: 1em;
+  border-radius: 10px;
 }
 
-.filter-container
-{
-    display: flex;
-    align-items: center;
-    gap: 1em;
-    flex-wrap: wrap;
-    margin-top: 1em;
+.search--form label {
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 20px;
 }
 
-.filter-container div
-{
-    flex: 1 1 400px;
-    display: flex;
-    align-items: center;
-    gap: 1em;
-    background-color: white;
+.filter-container {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  flex-wrap: wrap;
+  margin-top: 1em;
 }
 
-.search--form input
-{
-    flex-grow: 1;
-    border: none;
+.filter-container div {
+  flex: 1 1 400px;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  background-color: white;
 }
 
-.search--form svg
-{
-    height: 1.1em;
+.search--form input {
+  flex-grow: 1;
+  border: none;
 }
 
-.search--form button
-{
-    padding: 0.5em 1em;
-    border-radius: 5px;
-    background-color: var(--primary-color);
-    border: 2px solid var(--primary-color);
-    color: white;
-    cursor: pointer;
-    transition: color 300ms ease, background-color 300ms ease;
+.search--form svg {
+  height: 1.1em;
 }
 
-.search--form button:hover
-{
-    background-color: transparent;
-    color: var(--primary-color);
+.search--form button {
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  background-color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+  color: white;
+  cursor: pointer;
+  transition: color 300ms ease, background-color 300ms ease;
+}
+
+.search--form button:hover {
+  background-color: transparent;
+  color: var(--primary-color);
 }
 
 .item,
-.search--form
-{
-    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
+.search--form {
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
 }
 
-.container
-{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-    gap: 2em;
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 2em;
 }
 
-.item
-{
-    background-color: white;
-    flex: 1 1 400px;
-    padding: 1.5em;
+.item {
+  background-color: white;
+  flex: 1 1 400px;
+  padding: 1.5em;
 }
 
-.item h2
-{
-    font-size: 24px;
-    color: #222;
+.item h2 {
+  font-size: 24px;
+  color: #222;
 }
 
-.item div
-{
-    margin-top: 0.75em;
+.item div {
+  margin-top: 0.75em;
 }
 
 .item p,
-.item svg
-{
-    color: #777;
-    fill: currentColor;
+.item svg {
+  color: #777;
+  fill: currentColor;
 }
 
-.author span
-{
-    font-weight: 600;
+.author span {
+  font-weight: 600;
 }
 
-.item svg
-{
-    height: 1.1em;
+.item svg {
+  height: 1.1em;
 }
 
-.location
-{
-    display: flex;
-    align-items: center;
-    gap: 1em;
-    line-height: 1;
+.location {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  line-height: 1;
 }
 
 .location p,
-.location svg
-{
-    color: var(--primary-color);
+.location svg {
+  color: var(--primary-color);
 }
 
-.date
-{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+.date {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-.date a
-{
-    color: var(--gray-text-color);
-    text-decoration: none;
-    transition: color 300ms ease;
+.date a {
+  color: var(--gray-text-color);
+  text-decoration: none;
+  transition: color 300ms ease;
 }
 
-.date a:hover
-{
-    color: var(--text-color);
+.date a:hover {
+  color: var(--text-color);
 }
 
-.date span
-{
-    background-color: #f3f3f3;
-    padding: 0.5em 0.75em;
-    display: inline-block;
-    border-radius: 2em;
+.date span {
+  background-color: #f3f3f3;
+  padding: 0.5em 0.75em;
+  display: inline-block;
+  border-radius: 2em;
 }
 
-.btn-container
-{
-    display: flex;
-    align-items: center;
-    gap: 1em;
+.btn-container {
+  display: flex;
+  align-items: center;
+  gap: 1em;
 }
 
-.succes,
-.error
-{
-    background-color: white;
-    color: var(--text-color);
-    width: max-content;
-    margin: 0 auto;
-    position: relative;
-    display: grid;
-    grid-template-columns: 1fr auto;
-    align-items: center;
-    gap: 2em;
-    border-radius: 10px 0 0 10px;
+.btn-container svg {
+  cursor: pointer;
 }
 
-.succes > div,
-.error > div
-{
-    padding: 1.5em;
+.success,
+.error {
+  background-color: white;
+  color: var(--text-color);
+  width: max-content;
+  margin: 0 auto;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 2em;
+  border-radius: 10px 0 0 10px;
 }
 
-.succes p,
-.error p
-{
-    color: var(--gray-text-color);
+.hidden {
+  display: none;
 }
 
-
-.succes::after,
-.error::after
-{
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    width: 5px;
-    background-color: #4fc863;
-    border-radius: inherit;
+.success > div,
+.error > div {
+  padding: 1.5em;
 }
 
-.error::after
-{
-    background-color: #f86463;
+.success p,
+.error p {
+  color: var(--gray-text-color);
 }
 
-.close
-{
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-left: 1px solid var(--gray-text-color);
+.success::after,
+.error::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 5px;
+  background-color: #4fc863;
+  border-radius: inherit;
 }
 
-.close a
-{
-    color: var(--gray-text-color);
-    display: block;
-    text-decoration: none;
+.error::after {
+  background-color: #f86463;
 }
 
-.sql-form
-{
-    max-width: 500px;
-    background: white;
-    padding: 2rem;
-    border-radius: 20px;
-    margin: 0 auto;
-    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+.close {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-left: 1px solid var(--gray-text-color);
 }
 
-.sql-form label
-{
-    display: inline-block;
-    color: var(--gray-text-color);
-    margin: 1.5em 0 0.5em 0;
-    cursor: pointer;
-    font-size: 14px;
+.close a {
+  color: var(--gray-text-color);
+  display: block;
+  text-decoration: none;
+}
+
+.sql-form {
+  max-width: 500px;
+  background: white;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  margin: 0 auto;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.15);
+}
+
+.sql-form label {
+  display: inline-block;
+  color: var(--gray-text-color);
+  margin: 1.5em 0 0.5em 0;
+  cursor: pointer;
+  font-size: 14px;
 }
 
 .sql-form input,
-.sql-form label
-{
-    display: block;
+.sql-form label {
+  display: block;
 }
 
-.sql-form label
-{
-    margin: 1em 0 0.5em 0;
+.sql-form label {
+  margin: 1em 0 0.5em 0;
 }
 
-.sql-form input
-{
-    font-size: 14px;
-    border-radius: 5px;
-    padding: 0.5em;
-    border: 1px solid #e1e8f2;
-    background-color: #fcfdff;
-    color: var(--text-color);
-    max-width: 100%;
-    width: 300px;
-    transition: border 300ms ease;
+.sql-form input {
+  font-size: 14px;
+  border-radius: 5px;
+  padding: 0.5em;
+  border: 1px solid #e1e8f2;
+  background-color: #fcfdff;
+  color: var(--text-color);
+  max-width: 100%;
+  width: 300px;
+  transition: border 300ms ease;
 }
 
-.sql-form input:focus
-{
-    border-color: var(--primary-color);
-    background-color: #fcfdff;
+.sql-form input:focus {
+  border-color: var(--primary-color);
+  background-color: #fcfdff;
 }
 
-.delete-header
-{
-    font-size: 1.5rem;
-    color: var(--text-color);
-    margin: 2em 0 0.5em 0;
+.delete-header {
+  font-size: 1.5rem;
+  color: var(--text-color);
+  margin: 2em 0 0.5em 0;
 }
 
-.button
-{
-    margin-top: 1em;
-    cursor: pointer;
-    background-color: var(--primary-color);
-    color: white;
-    padding: 0.5em 2em;
-    font-size: 16px;
-    border-radius: 5px;
-    border: 2px solid var(--primary-color);
-    transition: background-color 300ms ease, color 300ms ease;
+.button {
+  margin-top: 1em;
+  cursor: pointer;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.5em 2em;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 2px solid var(--primary-color);
+  transition: background-color 300ms ease, color 300ms ease;
 }
 
-.button:hover
-{
-    background-color: transparent;
-    color: var(--primary-color);
+.button:hover {
+  background-color: transparent;
+  color: var(--primary-color);
 }
 
-@media screen and (max-width: 900px)
-{
-    section
-    {
-        padding-top: 0;
-    }
+@media screen and (max-width: 900px) {
+  section {
+    padding-top: 0;
+  }
 }
 
-@media screen and (max-width: 450px)
-{
-    .container
-    {
-        grid-template-columns: 1fr;
-    }
+@media screen and (max-width: 450px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
 }

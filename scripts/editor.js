@@ -64,7 +64,7 @@ function setAvatar(avatar) {
 
 const avatarEl = document.querySelector(".avatar");
 function loadAvatar() {
-  const avatarId = localStorage.getItem("avatar");
+  const avatarId = localStorage.getItem("avatar") ?? 1;
   avatarEl.src = `../images/avatars/avatar${avatarId}.png`;
 
   const avatarsEls = document.querySelectorAll(".avatar-wrapper img");

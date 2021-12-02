@@ -6,299 +6,258 @@
     Stylesheet Project Thema 4
 */
 
-section
-{
-    max-width: 1200px;
-    margin: 0 auto;
+section {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.hero
-{
-    padding: 75px 0;
-    display: flex;
-    align-items: center;
-    min-height: 100vh;
+.hero {
+  padding: 75px 0;
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
 }
 
-.hero > div
-{
-    flex: 1 1 600px;
-    z-index: 2;
+.hero > div {
+  flex: 1 1 600px;
+  z-index: 2;
 }
 
-.hero .image--container
-{
-    flex: 1 1 400px;
-    z-index: 1;
+.hero .image--container {
+  flex: 1 1 400px;
+  z-index: 1;
 }
 
 /* Selecteerd alles in de eerste div */
-.fade-in
-{
-    animation: fade-in 600ms ease forwards;
-    transform: translateY(50px);
-    opacity: 0;
+.fade-in {
+  animation: fade-in 600ms ease forwards;
+  transform: translateY(50px);
+  opacity: 0;
 }
 
-@keyframes fade-in
-{
-    to
-    {
-        transform: translateY(0);
-        opacity: 1;
-    }
+@keyframes fade-in {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 .hero h4,
-.iframe--section h4
-{
-    color: var(--primary-color);
-    background-color: var(--primary-color-2);
-    font-size: clamp(12px, 8px + 1.25vw, 16px);
-    /* Maakt het element niet meer heel de breedte, maar zorgt er nog wel voor dat je padding en margin kan toevoegen */
-    display: inline-block;
-    padding: 0.75em;
-    border-radius: 50px;
+.iframe--section h4 {
+  color: var(--primary-color);
+  background-color: var(--primary-color-2);
+  font-size: clamp(12px, 8px + 1.25vw, 16px);
+  /* Maakt het element niet meer heel de breedte, maar zorgt er nog wel voor dat je padding en margin kan toevoegen */
+  display: inline-block;
+  padding: 0.75em;
+  border-radius: 50px;
 }
 
-.hero h1
-{
-    max-width: 19ch;
-    font-size: clamp(2.1rem, 1.2rem + 3.5vw, 3.8rem);
-    line-height: 1.1;
-    color: var(--text-color);
-    animation-delay: 200ms;
+.hero h1 {
+  max-width: 19ch;
+  font-size: clamp(2.1rem, 1.2rem + 3.5vw, 3.8rem);
+  line-height: 1.1;
+  color: var(--text-color);
+  animation-delay: 200ms;
 }
 
 .hero span,
-.iframe--section span
-{
-    color: var(--primary-color);
+.iframe--section span {
+  color: var(--primary-color);
 }
 
 .hero p,
-.iframe--section p
-{
-    color: var(--gray-text-color);
-    font-weight: 500;
-    margin: 1em 0 2em 0;
-    max-width: 55ch;
-    font-size: clamp(14px, 8px + 1.25vw, 18px);
-    animation-delay: 400ms;
+.iframe--section p {
+  color: var(--gray-text-color);
+  font-weight: 500;
+  margin: 1em 0 2em 0;
+  max-width: 55ch;
+  font-size: clamp(14px, 8px + 1.25vw, 18px);
+  animation-delay: 400ms;
 }
 
 .hero a,
-.iframe--section a
-{
-    /* Nodig om fade-in transform propertie te laten werken */
-    display: inline-block;
-    font-size: 18px;
-    color: var(--primary-color);
-    text-decoration: none;
-    animation-delay: 600ms;
+.iframe--section a {
+  /* Nodig om fade-in transform propertie te laten werken */
+  display: inline-block;
+  font-size: 18px;
+  color: var(--primary-color);
+  text-decoration: none;
+  animation-delay: 600ms;
 }
 
-.image--container
-{
-    padding: 3em 0;
-    width: 100%;
-    height: 500px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    transform: translateX(150px);
-    animation-delay: 400ms;
-    animation-duration: 1200ms;
+.image--container {
+  padding: 3em 0;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  transform: translateX(150px);
+  animation-delay: 400ms;
+  animation-duration: 1200ms;
 }
 
-.image--container > div
-{
-    width: 80%;
-    max-width: 500px;
+.image--container > div {
+  width: 80%;
+  max-width: 500px;
 }
 
-.image--container img
-{
-    width: 100%;
-    /* Nodig om een niuewe stacking layer te creeren */
-    transform: scaleX(1);
-    /* Voegt alleen links en rechts onder de border-radius toe */
-    border-radius: 0 0 800px 800px;
-    display: block;
+.image--container img {
+  width: 100%;
+  /* Nodig om een niuewe stacking layer te creeren */
+  transform: scaleX(1);
+  /* Voegt alleen links en rechts onder de border-radius toe */
+  border-radius: 0 0 800px 800px;
+  display: block;
 }
 
-img.reverse
-{
-    /* Spiegelt het element */
-    transform: scaleX(-1);
+img.reverse {
+  /* Spiegelt het element */
+  transform: scaleX(-1);
 }
 
-.img--background
-{
-    width: 100%;
-    padding-top: 100%;
-    position: absolute;
-    bottom: 0;
-    border-radius: 50%;
-    background-color: var(--primary-color);
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.15);
+.img--background {
+  width: 100%;
+  padding-top: 100%;
+  position: absolute;
+  bottom: 0;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.15);
 }
 
-.animating
-{
-    animation: rotate 2s ease-in-out;
+.animating {
+  animation: rotate 2s ease-in-out;
 }
 
-@keyframes rotate
-{
-    to
-    {
-        transform: translate(var(--translateX), var(--translateY)) rotate(-360deg);
-    }
+@keyframes rotate {
+  to {
+    transform: translate(var(--translateX), var(--translateY)) rotate(-360deg);
+  }
 }
 
-.animate
-{
-    /* Deze custom css properties worden met JavaScript veranderd */
-    --translateX: 0px;
-    --translateY: 0px;
-    --rotate: 0deg;
+.animate {
+  /* Deze custom css properties worden met JavaScript veranderd */
+  --translateX: 0px;
+  --translateY: 0px;
+  --rotate: 0deg;
 
-    transform: translate(var(--translateX), var(--translateY)) rotate(var(--rotate));
+  transform: translate(var(--translateX), var(--translateY)) rotate(var(--rotate));
 }
 
-.plane
-{
-    --rotate: -15deg;
-    position: absolute;
-    height: 3em;
-    right: 0;
-    top: 0;
+.plane {
+  --rotate: -15deg;
+  position: absolute;
+  height: 3em;
+  right: 0;
+  top: 0;
 }
 
-.plane.animating
-{
-    animation: fly 3s ease forwards;
+.plane.animating {
+  animation: fly 3s ease forwards;
 }
 
-@keyframes fly
-{
-    to
-    {
-        right: -100%;
-        top: -100%;
-    }
+@keyframes fly {
+  to {
+    right: -100%;
+    top: -100%;
+  }
 }
 
-.plane-base
-{
-    fill: var(--primary-color-2);
+.plane-base {
+  fill: var(--primary-color-2);
 }
 
-.plane-sides
-{
-    fill: var(--primary-color);
+.plane-sides {
+  fill: var(--primary-color);
 }
 
-.dot
-{
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    background-color: var(--primary-color);
-    border-radius: 50%;
+.dot {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
 }
 
-.dot1
-{
-    top: -50px;
-    left: -10px;
-    width: 15px;
-    height: 15px;
+.dot1 {
+  top: -50px;
+  left: -10px;
+  width: 15px;
+  height: 15px;
 }
 
-.dot2
-{
-    bottom: -60px;
-    right: 50px;
-    width: 12px;
-    height: 12px;
+.dot2 {
+  bottom: -60px;
+  right: 50px;
+  width: 12px;
+  height: 12px;
 }
 
-.dot3
-{
-    bottom: 60px;
-    left: -50px;
-    background-color: var(--orange-color);
+.dot3 {
+  bottom: 60px;
+  left: -50px;
+  background-color: var(--orange-color);
 }
 
-.bolt
-{
-    position: absolute;
-    width: 40px;
-    fill: var(--orange-color);
-    right: -20px;
-    top: 60%;
-    cursor: pointer;
+.bolt {
+  position: absolute;
+  width: 40px;
+  fill: var(--orange-color);
+  right: -20px;
+  top: 60%;
+  cursor: pointer;
 }
 
-.iframe--section
-{
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 2em;
-    min-height: 60vh;
-    margin-bottom: 7.5em;
+.iframe--section {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2em;
+  min-height: 60vh;
+  margin-bottom: 7.5em;
 }
 
-.iframe--section article
-{
-    flex: 1 1 400px;
+.iframe--section article {
+  flex: 1 1 400px;
 }
 
-.iframe--container
-{
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    padding-top: 56.25%; /* Aspect ratio in procenten van 16 / 9 */
+.iframe--container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%; /* Aspect ratio in procenten van 16 / 9 */
 }
 
-.iframe--section h2
-{
-    font-size: clamp(1.5rem, 1.25rem + 1.1vw, 2.25rem);
-    margin-top: 0.25em;
-    color: var(--text-color);
+.iframe--section h2 {
+  font-size: clamp(1.5rem, 1.25rem + 1.1vw, 2.25rem);
+  margin-top: 0.25em;
+  color: var(--text-color);
 }
 
-iframe
-{
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
+iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
 }
 
-@media screen and (max-width: 950px)
-{
-    .hero
-    {
-        flex-direction: column;
-        text-align: center;
-    }
+@media screen and (max-width: 950px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
 
-    .hero > div:first-of-type
-    {
-        flex: 1 1 0;
-    }
+  .hero > div:first-of-type {
+    flex: 1 1 0;
+  }
 
-    .hero p
-    {
-        margin: 1em auto 2em auto;
-    }
+  .hero p {
+    margin: 1em auto 2em auto;
+  }
 }

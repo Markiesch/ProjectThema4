@@ -1,18 +1,25 @@
+/*================
+    Init Events
+  ================*/
+
+const defaultEvents = [
+  { name: "Dance party", creator: "Markiesch", start: "12-5-2021 : 14:30", end: "12-5-2021 : 15:45", location: "'s-Hertogenbosch" },
+  { name: "Pool party", creator: "Markiesch", start: "14-5-2021 : 18:00", end: "14-5-2021 : 23:30", location: "'s-Hertogenbosch" },
+  { name: "Diner evening", creator: "Markiesch", start: "14-5-2021 : 16:45", end: "14-5-2021 : 19:30", location: "'s-Hertogenbosch" },
+];
+
+let events = JSON.parse(localStorage.getItem("events"));
+if (!events || !events.length) localStorage.setItem("events", JSON.stringify(defaultEvents));
+
 /*===================
     Lang management
   ===================*/
-let lang = "nl";
-
-// Zet de lang variabel naar de gene die opgeslagen is in localstorage als deze bestaat
-if (localStorage.getItem("lang") !== null) {
-  lang = localStorage.getItem("lang");
-}
+let lang = localStorage.getItem("lang") ?? "en";
 
 const langBtn = document.querySelector(".lang");
 langBtn.addEventListener("click", toggleLang);
 
 function toggleLang() {
-  // Zet de lang variabel naar NL als het op EN staat (true) en zet het naar EN als het niet op EN staat (NL, false)
   lang = lang == "en" ? "nl" : "en";
   localStorage.setItem("lang", lang);
 
@@ -20,22 +27,17 @@ function toggleLang() {
 }
 
 function loadLang() {
-  fetch("scripts/lang.json")
+  fetch("./scripts/lang.json")
     .then((response) => response.json())
     .then((data) => {
-      // Selecteerd alle elementen met een data-lang attribuut
       const elements = document.querySelectorAll("[data-lang]");
 
-      // Loopts over alle elementen met als "placeholder" "element"
       for (const element of elements) {
-        // Krijgt de waarde van de data-lang attribuut
         const title = element.dataset.lang;
-        // data is geen array maar een object de [] zorgen ervoor dat hij de waarde van de variable leest ipv als woord
         element.innerHTML = data[lang][title];
       }
     });
 }
-// Laad de teksten in wanneer de pagina laad
 loadLang();
 
 /*=============

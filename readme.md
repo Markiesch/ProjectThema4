@@ -1,6 +1,6 @@
 <div align="center">
     <a>
-        <img src="src/images/favicon.png" alt="Logo" width="80" height="80" />
+        <img src="images/favicon.png" alt="Logo" width="80" height="80" />
     </a>
     <h1>Foodz - Project Thema 4</h1>
     <p>A small website builded for student at Koning Willem I College (not for use purposes) where students can add, edit and delete catering events</p>

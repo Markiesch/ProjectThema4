@@ -36,7 +36,7 @@ function initColorPicker() {
   // Wacht tot de afbeelding geladen is totdat we het kunnen toevoegen aan de canvas
   image.onload = () => ctx.drawImage(image, 0, 0, image.width, image.height);
   // Zet de source van de afbeelding
-  image.src = "../images/ColorWheel.png";
+  image.src = "images/ColorWheel.png";
 
   canvasEl.onclick = function (e) {
     // Krijgt de imagedata op de plek waar je klikt op een radius van 1 bij 1px
@@ -65,7 +65,7 @@ function setAvatar(avatar) {
 const avatarEl = document.querySelector(".avatar");
 function loadAvatar() {
   const avatarId = localStorage.getItem("avatar") ?? 1;
-  avatarEl.src = `../images/avatars/avatar${avatarId}.png`;
+  avatarEl.src = `images/avatars/avatar${avatarId}.png`;
 
   const avatarsEls = document.querySelectorAll(".avatar-wrapper img");
   // Verwijderd alle active classes
